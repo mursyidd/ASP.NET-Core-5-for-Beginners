@@ -5,6 +5,7 @@ on:
   branches: [ master ] 
   paths: 
   - ‘Chapter 12/Chapter_12_GitHubActions_Examples/**’
+  # trigger the workflow only when a push happens in Chapter 12
   
 jobs: 
   build: 
@@ -21,7 +22,7 @@ jobs:
       with:
         name: myWASM
         path: ‘./Chapter 12/Chapter_12_GitHubActions_Examples/bin/Release/net5.0/publish/wwwroot’
-          # steps to build the application
+        # steps to build the application
  
   deploy:
     needs: build
@@ -49,5 +50,5 @@ jobs:
         git add .
         git commit -m “publishing WASM” 
         git push --set-upstream origin pages
-        # steps to deploy the application
+      # steps to deploy the application
  
