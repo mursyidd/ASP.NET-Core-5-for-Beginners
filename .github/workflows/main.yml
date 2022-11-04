@@ -1,9 +1,11 @@
 name: Build and Deploy ASP .NET Core Chapter 12 to GitHub Pages
+
 on:
  push:
   branches: [ master ] 
   paths: 
   - ‘Chapter 12/Chapter_12_GitHubActions_Examples/**’
+  
 jobs: 
   build: 
     runs-on: ubuntu-latest
