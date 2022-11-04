@@ -4,6 +4,8 @@ on:
  push:
   branches:
   - master
+  - pages
+  - dev/mursyid
   paths: 
   - ‘Chapter 12/Chapter_12_GitHubActions_Examples/**’
   # trigger the workflow only when a push happens in Chapter 12
